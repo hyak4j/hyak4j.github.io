@@ -1,0 +1,22 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Alice - Author - 亨利紅的隨手筆記</title>
+        <link>https://hyak4j.github.io/en/authors/alice/</link>
+        <description>Alice - Author - 亨利紅的隨手筆記</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 07 Jun 2021 11:39:42 &#43;0100</lastBuildDate><atom:link href="https://hyak4j.github.io/en/authors/alice/" rel="self" type="application/rss+xml" /><item>
+    <title>Multiple Authors Tests</title>
+    <link>https://hyak4j.github.io/en/multiple-authors-tests/</link>
+    <pubDate>Mon, 07 Jun 2021 11:39:42 &#43;0100</pubDate><author>
+            <name>Alice</name>
+            <uri>https://hyak4j.github.io/en/authors/alice</uri><email>alice@example.com</email></author><author>
+            <name>Bob</name>
+            <uri>https://hyak4j.github.io/en/authors/bob</uri></author><author>
+            <name>Catherine</name>
+            <uri>https://hyak4j.github.io/en/authors/catherine</uri></author><author>
+            <name>David</name>
+            <uri>https://hyak4j.github.io/en/authors/david</uri></author><author>
+            <name>Edward</name>
+            <uri>https://hyak4j.github.io/en/authors/edward</uri></author><guid>https://hyak4j.github.io/en/multiple-authors-tests/</guid>
+    <description><![CDATA[Multiple Authors Tests]]></description>
+</item></channel>
+</rss>
