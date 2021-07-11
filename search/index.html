@@ -1,17 +1,29 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="zh-cn">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content=''><title>Search</title>
 
-<link rel='canonical' href='https://example.com/search/'>
+<link rel='canonical' href='https://hyak4j.github.io/search/'>
 
 <link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='Search'>
 <meta property='og:description' content=''>
-<meta property='og:url' content='https://example.com/search/'>
-<meta property='og:site_name' content='Example Site'>
+<meta property='og:url' content='https://hyak4j.github.io/search/'>
+<meta property='og:site_name' content='亨利紅的記事本'>
 <meta property='og:type' content='article'><meta property='article:section' content='Page' />
 <meta name="twitter:title" content="Search">
-<meta name="twitter:description" content=""><link rel="alternate" type="application/json" href="https://example.com/search/index.json"><link rel="preload" href="https://example.com/search/index.json" as="fetch" crossorigin="anonymous">
+<meta name="twitter:description" content=""><link rel="alternate" type="application/json" href="https://hyak4j.github.io/search/index.json">
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-201250838-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script><link rel="preload" href="https://hyak4j.github.io/search/index.json" as="fetch" crossorigin="anonymous">
     </head>
     <body class="template-search">
     <script>
@@ -37,7 +49,7 @@
     })();
 </script>
 <div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky">
-    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换選單">
         <span class="hamburger-box">
             <span class="hamburger-inner"></span>
         </span>
@@ -51,18 +63,18 @@
                     
                     
                         
-                        <img src="/img/avatar_huda2458f72ce188392d75c5d51cd8e24e_373_300x0_resize_box_2.png" width="300"
-                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                        <img src="/img/avatar_hu053c06256d7f07e52ef1b5382e26062a_1927198_300x0_resize_box_2.png" width="300"
+                            height="225" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
 
                 
-                    <span class="emoji">🍥</span>
+                    <span class="emoji">🍣</span>
                 
             </figure>
         
-        <h1 class="site-name"><a href="https://example.com">Example Site</a></h1>
-        <h2 class="site-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+        <h1 class="site-name"><a href="https://hyak4j.github.io">亨利紅的記事本</a></h1>
+        <h2 class="site-description">程式。生活。投資</h2>
     </header>
 
     <ol class="menu" id="main-menu">
@@ -161,19 +173,19 @@
 
 
 
-                <span>Dark Mode</span>
+                <span>暗色模式</span>
             </li>
         
     </ol>
 </aside>
 <main class="main full-width">
-<form action="https://example.com/search/" class="search-form"data-json="https://example.com/search/index.json">
+<form action="https://hyak4j.github.io/search/" class="search-form"data-json="https://hyak4j.github.io/search/index.json">
     <p>
-        <label>Search</label>
-        <input name="keyword" placeholder="Type something..." />
+        <label>搜尋</label>
+        <input name="keyword" placeholder="輸入關鍵字..." />
     </p>
 
-    <button title="Search">
+    <button title="搜尋">
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <circle cx="10" cy="10" r="7" />
@@ -189,22 +201,17 @@
 <div class="search-result--list article-list--compact"></div>
 
 <script>
-    window.searchResultTitleTemplate = "#PAGES_COUNT pages (#TIME_SECONDS seconds)"
+    window.searchResultTitleTemplate = "#PAGES_COUNT 個結果 （耗費 #TIME_SECONDS 秒）"
 </script><script type="text/javascript" src="/ts/search.js" defer></script>
 
 <footer class="site-footer">
     <section class="copyright">
         &copy; 
         
-            2020 - 
-        
-        2021 Example Site
+        2021 亨利紅的記事本
     </section>
     
-    <section class="powerby">
-        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.5.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
-    </section>
+    
 </footer>
 
             </main>
