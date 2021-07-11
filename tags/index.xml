@@ -1,11 +1,74 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Clarity</title>
-    <link>https://example.com/tags/</link>
-    <description>Recent content in Tags on Clarity</description>
+    <title>Tags on 亨利紅</title>
+    <link>https://hyak4j.github.io/tags/</link>
+    <description>Recent content in Tags on 亨利紅</description>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-tw</language>
+    <lastBuildDate>Sun, 27 Jun 2021 11:07:47 +0600</lastBuildDate><atom:link href="https://hyak4j.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>0056</title>
+      <link>https://hyak4j.github.io/tags/0056/</link>
+      <pubDate>Sun, 27 Jun 2021 11:07:47 +0600</pubDate>
+      
+      <guid>https://hyak4j.github.io/tags/0056/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Investment</title>
+      <link>https://hyak4j.github.io/tags/investment/</link>
+      <pubDate>Sun, 27 Jun 2021 11:07:47 +0600</pubDate>
+      
+      <guid>https://hyak4j.github.io/tags/investment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Game</title>
+      <link>https://hyak4j.github.io/tags/game/</link>
+      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
+      
+      <guid>https://hyak4j.github.io/tags/game/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HTML</title>
+      <link>https://hyak4j.github.io/tags/html/</link>
+      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
+      
+      <guid>https://hyak4j.github.io/tags/html/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>New</title>
+      <link>https://hyak4j.github.io/tags/new/</link>
+      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
+      
+      <guid>https://hyak4j.github.io/tags/new/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Photos</title>
+      <link>https://hyak4j.github.io/tags/photos/</link>
+      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
+      
+      <guid>https://hyak4j.github.io/tags/photos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://hyak4j.github.io/tags/python/</link>
+      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
+      
+      <guid>https://hyak4j.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
