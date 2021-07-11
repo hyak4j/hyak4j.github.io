@@ -1,18 +1,3 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>configuration - Tag - 亨利紅的隨手筆記</title>
-        <link>https://hyak4j.github.io/en/tags/configuration/</link>
-        <description>configuration - Tag - 亨利紅的隨手筆記</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><atom:link href="https://hyak4j.github.io/en/tags/configuration/" rel="self" type="application/rss+xml" /><item>
-    <title>Theme Documentation - Basics</title>
-    <link>https://hyak4j.github.io/en/theme-documentation-basics/</link>
-    <pubDate>Fri, 06 Mar 2020 21:29:01 &#43;0800</pubDate><author>
-            <name>Dillon</name>
-            <uri>https://hyak4j.github.io/en/authors/dillon</uri></author><author>
-            <name>PCloud</name>
-            <uri>https://hyak4j.github.io/en/authors/pcloud</uri><email>heige.pcloud@outlook.com</email></author><guid>https://hyak4j.github.io/en/theme-documentation-basics/</guid>
-    <description><![CDATA[<div class="featured-image">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>configuration - Tag - 亨利紅的隨手筆記</title><link>https://hyak4j.github.io/en/tags/configuration/</link><description>configuration - Tag - 亨利紅的隨手筆記</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><atom:link href="https://hyak4j.github.io/en/tags/configuration/" rel="self" type="application/rss+xml"/><item><title>Theme Documentation - Basics</title><link>https://hyak4j.github.io/en/theme-documentation-basics/</link><pubDate>Fri, 06 Mar 2020 21:29:01 +0800</pubDate><author><name>Dillon</name><uri>https://hyak4j.github.io/en/authors/dillon</uri></author><author><name>PCloud</name><uri>https://hyak4j.github.io/en/authors/pcloud</uri><email>heige.pcloud@outlook.com</email></author><guid>https://hyak4j.github.io/en/theme-documentation-basics/</guid><description><![CDATA[<div class="featured-image">
                 <img src="/featured-image.webp" referrerpolicy="no-referrer">
-            </div><p>Discover what the Hugo - <strong>DoIt</strong> theme is all about and the core-concepts behind it.</p>]]></description>
-</item></channel>
-</rss>
+            </div><p>Discover what the Hugo - <strong>DoIt</strong> theme is all about and the core-concepts behind it.</p>]]></description></item></channel></rss>
