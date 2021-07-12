@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "style.min.css",
-	"sourceRoot": "C:/Users/Username/Desktop/Github_webIO/exampleSite2",
+	"sourceRoot": "C:/Users/Username/Desktop/Github_webIO/hyak4j_Blog",
 	"sources": [
 		"themes/DoIt/assets/css/style.scss",
 		"themes/DoIt/assets/css/_variables.scss",
