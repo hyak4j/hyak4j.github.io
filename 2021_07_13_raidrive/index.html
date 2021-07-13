@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>掛載你的雲端硬碟-RaiDrive - 亨利紅的隨手筆記</title><meta name="Description" content="將雲端硬碟與你的電腦融為一體"><meta property="og:title" content="掛載你的雲端硬碟-RaiDrive" />
+<meta property="og:description" content="將雲端硬碟與你的電腦融為一體" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hyak4j.github.io/2021_07_13_raidrive/" /><meta property="og:image" content="https://hyak4j.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-07-13T22:20:32&#43;08:00" />
+<meta property="article:modified_time" content="2021-07-13T22:20:32&#43;08:00" />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://hyak4j.github.io/logo.png"/>
+
+<meta name="twitter:title" content="掛載你的雲端硬碟-RaiDrive"/>
+<meta name="twitter:description" content="將雲端硬碟與你的電腦融為一體"/>
+<meta name="application-name" content="DoIt">
+<meta name="apple-mobile-web-app-title" content="DoIt">
+
+<meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://hyak4j.github.io/2021_07_13_raidrive/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+    <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
+    <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><meta name="google-site-verification" content="MQ8DNu27ayX6B_4ObiEDK09vGr1fdy7kOAnbd09hJk4" /><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "掛載你的雲端硬碟-RaiDrive",
+        "inLanguage": "zh-cn",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/hyak4j.github.io\/2021_07_13_raidrive\/"
+        },"image": ["https:\/\/hyak4j.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "應用軟體分享","wordcount":  346 ,
+        "url": "https:\/\/hyak4j.github.io\/2021_07_13_raidrive\/","datePublished": "2021-07-13T22:20:32+08:00","dateModified": "2021-07-13T22:20:32+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": {
+                    "@type": "ImageObject",
+                    "url": "https:\/\/hyak4j.github.io\/images\/avatar.webp",
+                    "width":  528 ,
+                    "height":  560 
+                }},"authors": [{
+                    "@type": "Person",
+                    "name": "Henry"
+                }],"description": "將雲端硬碟與你的電腦融為一體"
+    }
+    </script></head>
+
+<body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme);}
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {
+            const metas = document.getElementsByTagName('meta');
+            for (let i = 0; i < metas.length; i++)
+                if (metas[i].getAttribute('name') === metaName)
+                    return metas[i];
+            return '';
+        }
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('auto' === 'light' || 'auto' === 'dark' || 'auto' === 'black') setTheme('auto'), saveTheme('auto'); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let themeColorMeta = getMeta('theme-color');
+        if (document.body.getAttribute('theme') != 'light') themeColorMeta.content = '#000000';
+    </script>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="亨利紅的隨手筆記"><span class="header-title-pre"><i class='far fa-edit fa-fw'></i></span><span id="id-1" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 標籤 </a><a class="menu-item" href="/categories/"> 分類 </a><a class="menu-item" href="/series/"> 系列 </a><a class="menu-item" href="/categories/documentation/"> 文檔 </a><a class="menu-item" href="/about/"> 關於 </a><a class="menu-item" href="https://github.com" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><a href="#" onclick="return false;" class="menu-item language" title="選擇語言">繁體中文<i class="fas fa-chevron-right fa-fw"></i>
+                        <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/2021_07_13_raidrive/" selected>繁體中文</option></select>
+                    </a><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜尋文章標題或内容..." id="search-input-desktop">
+                        <a href="#" onclick="return false;" class="search-button search-toggle" id="search-toggle-desktop" title="搜尋">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" onclick="return false;" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="#" onclick="return false;" class="menu-item theme-select" title="切換主題">
+                    <i class="fas fa-adjust fa-fw"></i>
+                    <select class="color-theme-select" id="theme-select-desktop" title="切換主題">
+                        <option value="light">淺色</option>
+                        <option value="dark">深色</option>
+                        <option value="black">黑色</option>
+                        <option value="auto">自動</option>
+                    </select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="亨利紅的隨手筆記"><span class="header-title-pre"><i class='far fa-edit fa-fw'></i></span><span id="id-2" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜尋文章標題或内容..." id="search-input-mobile">
+                        <a href="#" onclick="return false;" class="search-button search-toggle" id="search-toggle-mobile" title="搜尋">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" onclick="return false;" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="#" onclick="return false;" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">標籤</a><a class="menu-item" href="/categories/" title="">分類</a><a class="menu-item" href="/series/" title="">系列</a><a class="menu-item" href="/categories/documentation/" title="">文檔</a><a class="menu-item" href="/about/" title="">關於</a><a class="menu-item" href="https://github.com" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="#" onclick="return false;" class="menu-item theme-select" title="切換主題">
+                <i class="fas fa-adjust fa-fw"></i>
+                <select class="color-theme-select" id="theme-select-mobile" title="切換主題">
+                    <option value="light">淺色</option>
+                    <option value="dark">深色</option>
+                    <option value="black">黑色</option>
+                    <option value="auto">自動</option>
+                </select>
+            </a><a href="#" onclick="return false;" class="menu-item" title="選擇語言">繁體中文<i class="fas fa-chevron-right fa-fw"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/2021_07_13_raidrive/" selected>繁體中文</option></select>
+                </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+            <div class="container"><div class="toc" id="toc-auto">
+        <h2 class="toc-title">目錄</h2>
+        <div class="toc-content always-active" id="toc-content-auto"></div>
+    </div><script>document.body.setAttribute("pageStyle", "wide")</script><script>document.body.setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">掛載你的雲端硬碟-RaiDrive</h1><div class="post-meta">
+            <div class="post-meta-line">
+                <span class="post-author"><span class='author'><i class="author fas fa-user-circle fa-fw"></i><span class='screen-reader-text'>  </span><a href='https://hyak4j.github.io/authors/henry'>Henry</a></span>
+                </span>&nbsp;<span class="post-category">收錄於 </span>&nbsp;<span class="post-category">類別 <a href="/categories/documentation/"><i class="far fa-folder fa-fw"></i>文档</a></span>&nbsp;<span class="post-category">和</span>&nbsp;<span class="post-series">系列 <a href="/series/software-sharing/"><i class="far fa-list-alt fa-fw"></i>software-sharing</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-07-13">2021-07-13</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 346 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;預計閱讀 1 分鐘&nbsp;<span id="/2021_07_13_raidrive/" class="leancloud_visitors" data-flag-title="掛載你的雲端硬碟-RaiDrive">
+                        <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count id=twikoo_visitors></span>&nbsp;次閱讀
+                    </span>&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        data-src="/2021_07_13_raidrive/0.png"
+        data-srcset="/2021_07_13_raidrive/0.png, /2021_07_13_raidrive/0.png 1.5x, /2021_07_13_raidrive/0.png 2x"
+        data-sizes="auto"
+        alt="/2021_07_13_raidrive/0.png"
+        title="將雲端硬碟與你的電腦融為一體" height="49" width="151"
+    /></div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>目錄</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#測試環境">測試環境</a></li>
+    <li><a href="#軟體資訊">軟體資訊</a></li>
+    <li><a href="#安装步驟">安装步驟</a>
+      <ul>
+        <li><a href="#1至官方網站點選下載">1.至官方網站點選下載</a></li>
+        <li><a href="#2下載目前最新版本">2.下載目前最新版本</a></li>
+        <li><a href="#3點選安裝檔--開始安裝步驟">3.點選安裝檔 =&gt; 開始安裝步驟</a></li>
+        <li><a href="#4raidrive語系設定">4.RaiDrive語系設定</a></li>
+        <li><a href="#5選取欲掛載之網路硬碟">5.選取欲掛載之網路硬碟</a></li>
+        <li><a href="#6登入google帳密並將權限授予raidrive">6.登入Google帳密，並將權限授予RaiDrive</a></li>
+        <li><a href="#7完成-本機路徑多了所設定掛載的網路硬碟">7.完成! 本機路徑多了所設定掛載的網路硬碟</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="測試環境">測試環境</h2>
+<ul>
+<li>Windows 10 家用版</li>
+</ul>
+<h2 id="軟體資訊">軟體資訊</h2>
+<ul>
+<li>軟體名稱: RaiDrive</li>
+<li>軟體性質: 免費軟體 (含付費版)</li>
+<li>介面語系: 支援多國語系 (含繁體中文)</li>
+<li>官方網站: <a href="https://www.raidrive.com/">https://www.raidrive.com/</a></li>
+</ul>
+<!-- <div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw"></i>推荐使用 Hugo extended 版本<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">由于这个主题的一些特性需要将 <i class="fab fa-sass fa-fw"></i>&nbsp;SCSS 转换为 <i class="fab fa-css3 fa-fw"></i>&nbsp;CSS, 推荐使用 Hugo <strong>extended</strong> 版本来获得更好的使用体验.</div>
+        </div>
+    </div> -->
+<h2 id="安装步驟">安装步驟</h2>
+<h3 id="1至官方網站點選下載">1.至官方網站點選下載</h3>
+<!-- <figure><a class="lightgallery" href="/2021_07_13_raidrive/1.png" title="/2021_07_13_raidrive/1.png" data-thumbnail="/2021_07_13_raidrive/1.png" data-sub-html="<h2>完整配置下的预览</h2>">
+        <img
+            class="lazyload"
+            data-src="1.png"
+            data-srcset="/2021_07_13_raidrive/1.png, 1.png 1.5x, /2021_07_13_raidrive/1.png 2x"
+            data-sizes="auto"
+            alt="/2021_07_13_raidrive/1.png"height="300"width="800"
+        />
+    </a><figcaption class="image-caption">完整配置下的预览</figcaption>
+    </figure> -->
+<a class="lightgallery" href="/2021_07_13_raidrive/1.png" title="/2021_07_13_raidrive/1.png" data-thumbnail="/2021_07_13_raidrive/1.png">
+        <img
+            class="lazyload"
+            data-src="1.png"
+            data-srcset="/2021_07_13_raidrive/1.png, 1.png 1.5x, /2021_07_13_raidrive/1.png 2x"
+            data-sizes="auto"
+            alt="/2021_07_13_raidrive/1.png"height="500"width="1000"
+        />
+    </a>
+<h3 id="2下載目前最新版本">2.下載目前最新版本</h3>
+<p>目前最新版本: 2021.5.20  (檔案大小80.31MB)
+<a class="lightgallery" href="/2021_07_13_raidrive/2.png" title="/2021_07_13_raidrive/2.png" data-thumbnail="/2021_07_13_raidrive/2.png">
+        <img
+            class="lazyload"
+            data-src="2.png"
+            data-srcset="/2021_07_13_raidrive/2.png, 2.png 1.5x, /2021_07_13_raidrive/2.png 2x"
+            data-sizes="auto"
+            alt="/2021_07_13_raidrive/2.png"height="400"width="800"
+        />
+    </a></p>
+<h3 id="3點選安裝檔--開始安裝步驟">3.點選安裝檔 =&gt; 開始安裝步驟</h3>
+<p>raidrive-2021-5-20.exe
+<a class="lightgallery" href="/2021_07_13_raidrive/4.png" title="/2021_07_13_raidrive/4.png" data-thumbnail="/2021_07_13_raidrive/4.png">
+        <img
+            class="lazyload"
+            data-src="4.png"
+            data-srcset="/2021_07_13_raidrive/4.png, 4.png 1.5x, /2021_07_13_raidrive/4.png 2x"
+            data-sizes="auto"
+            alt="/2021_07_13_raidrive/4.png"height="400"width="800"
+        />
+    </a></p>
+<p>同意許可和條件 =&gt; 點選安裝
+<a class="lightgallery" href="/2021_07_13_raidrive/5.png" title="/2021_07_13_raidrive/5.png" data-thumbnail="/2021_07_13_raidrive/5.png">
+        <img
+            class="lazyload"
+            data-src="5.png"
+            data-srcset="/2021_07_13_raidrive/5.png, 5.png 1.5x, /2021_07_13_raidrive/5.png 2x"
+            data-sizes="auto"
+            alt="/2021_07_13_raidrive/5.png"height="400"width="800"
+        />
+    </a></p>
+<p>Windows安全性詢問: 確認安裝
+<a class="lightgallery" href="/2021_07_13_raidrive/6.png" title="/2021_07_13_raidrive/6.png" data-thumbnail="/2021_07_13_raidrive/6.png">
+        <img
+            class="lazyload"
+            data-src="6.png"
+            data-srcset="/2021_07_13_raidrive/6.png, 6.png 1.5x, /2021_07_13_raidrive/6.png 2x"
+            data-sizes="auto"
+            alt="/2021_07_13_raidrive/6.png"height="400"width="800"
+        />
+    </a></p>
+<h3 id="4raidrive語系設定">4.RaiDrive語系設定</h3>
+<p>點擊 setting
+<a class="lightgallery" href="/2021_07_13_raidrive/7.png" title="/2021_07_13_raidrive/7.png" data-thumbnail="/2021_07_13_raidrive/7.png">
+        <img
+            class="lazyload"
+            data-src="7.png"
+            data-srcset="/2021_07_13_raidrive/7.png, 7.png 1.5x, /2021_07_13_raidrive/7.png 2x"
+            data-sizes="auto"
+            alt="/2021_07_13_raidrive/7.png"height="400"width="800"
+        />
+    </a></p>
+<p>選取中文(繁體)
+<a class="lightgallery" href="/2021_07_13_raidrive/8.png" title="/2021_07_13_raidrive/8.png" data-thumbnail="/2021_07_13_raidrive/8.png">
+        <img
+            class="lazyload"
+            data-src="8.png"
+            data-srcset="/2021_07_13_raidrive/8.png, 8.png 1.5x, /2021_07_13_raidrive/8.png 2x"
+            data-sizes="auto"
+            alt="/2021_07_13_raidrive/8.png"height="400"width="800"
+        />
+    </a></p>
+<h3 id="5選取欲掛載之網路硬碟">5.選取欲掛載之網路硬碟</h3>
+<p>點擊新增</p>
+<a class="lightgallery" href="/2021_07_13_raidrive/9.png" title="/2021_07_13_raidrive/9.png" data-thumbnail="/2021_07_13_raidrive/9.png">
+        <img
+            class="lazyload"
+            data-src="9.png"
+            data-srcset="/2021_07_13_raidrive/9.png, 9.png 1.5x, /2021_07_13_raidrive/9.png 2x"
+            data-sizes="auto"
+            alt="/2021_07_13_raidrive/9.png"height="400"width="800"
+        />
+    </a>
+<p>選取欲掛載之網路硬碟 (以Google Drive為例)
+以初始設定即可 =&gt; 點選確認
+<a class="lightgallery" href="/2021_07_13_raidrive/10.png" title="/2021_07_13_raidrive/10.png" data-thumbnail="/2021_07_13_raidrive/10.png">
+        <img
+            class="lazyload"
+            data-src="10.png"
+            data-srcset="/2021_07_13_raidrive/10.png, 10.png 1.5x, /2021_07_13_raidrive/10.png 2x"
+            data-sizes="auto"
+            alt="/2021_07_13_raidrive/10.png"height="400"width="800"
+        />
+    </a></p>
+<h3 id="6登入google帳密並將權限授予raidrive">6.登入Google帳密，並將權限授予RaiDrive</h3>
+<a class="lightgallery" href="/2021_07_13_raidrive/11.png" title="/2021_07_13_raidrive/11.png" data-thumbnail="/2021_07_13_raidrive/11.png">
+        <img
+            class="lazyload"
+            data-src="11.png"
+            data-srcset="/2021_07_13_raidrive/11.png, 11.png 1.5x, /2021_07_13_raidrive/11.png 2x"
+            data-sizes="auto"
+            alt="/2021_07_13_raidrive/11.png"height="400"width="800"
+        />
+    </a>
+<h3 id="7完成-本機路徑多了所設定掛載的網路硬碟">7.完成! 本機路徑多了所設定掛載的網路硬碟</h3>
+<a class="lightgallery" href="/2021_07_13_raidrive/12.png" title="/2021_07_13_raidrive/12.png" data-thumbnail="/2021_07_13_raidrive/12.png">
+        <img
+            class="lazyload"
+            data-src="12.png"
+            data-srcset="/2021_07_13_raidrive/12.png, 12.png 1.5x, /2021_07_13_raidrive/12.png 2x"
+            data-sizes="auto"
+            alt="/2021_07_13_raidrive/12.png"height="400"width="800"
+        />
+    </a></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新日 2021-07-13</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/2021_07_13_raidrive/index.md" target="_blank" rel="noopener noreferrer">閱讀原始文件</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="#" onclick="return false;" title="分享到 Twitter" data-sharer="twitter" data-url="https://hyak4j.github.io/2021_07_13_raidrive/" data-title="掛載你的雲端硬碟-RaiDrive" data-hashtags="應用軟體分享"><i class="fab fa-twitter fa-fw"></i></a><a href="#" onclick="return false;" title="分享到 Facebook" data-sharer="facebook" data-url="https://hyak4j.github.io/2021_07_13_raidrive/" data-hashtag="應用軟體分享"><i class="fab fa-facebook-square fa-fw"></i></a><a href="#" onclick="return false;" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://hyak4j.github.io/2021_07_13_raidrive/" data-title="掛載你的雲端硬碟-RaiDrive"><i class="fab fa-hacker-news fa-fw"></i></a><a href="#" onclick="return false;" title="分享到 Line" data-sharer="line" data-url="https://hyak4j.github.io/2021_07_13_raidrive/" data-title="掛載你的雲端硬碟-RaiDrive"><i data-svg-src="/lib/simple-icons/icons/line.min.svg"></i></a><a href="#" onclick="return false;" title="分享到 微博" data-sharer="weibo" data-url="https://hyak4j.github.io/2021_07_13_raidrive/" data-title="掛載你的雲端硬碟-RaiDrive" data-image="0.png" data-ralateuid="xxxx"><i class="fab fa-weibo fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/%E6%87%89%E7%94%A8%E8%BB%9F%E9%AB%94%E5%88%86%E4%BA%AB/">應用軟體分享</a></section>
+        <section>
+            <span><a href="#" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主頁</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"></div>
+</div>
+<div id="comments"><div id="twikoo"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://twikoo.js.org/">Twikoo</a>.
+            </noscript></div></article></div>
+        </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.84.1">Hugo</a> | 主題 - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreffer" title="DoIt 0.2.10"><i class="far fa-edit fa-fw"></i> DoIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://github.com/" target="_blank" rel="noopener noreferrer">亨利紅</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div><script>
+                    if('serviceWorker' in navigator) {
+                        navigator.serviceWorker
+                            .register('/sw.min.js', { scope: '/' })
+                            .then(function(registration) {
+                                
+                            });
+                
+                        navigator.serviceWorker
+                            .ready
+                            .then(function(registration) {
+                                
+                            });
+                    }
+                </script></footer></div>
+
+    <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到頂部">
+            <i class="fas fa-arrow-up fa-fw"></i>
+        </a><a href="#" id="view-comments" class="fixed-button" title="查看評論">
+            <i class="fas fa-comment fa-fw"></i>
+        </a>
+    </div><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><script type="text/javascript" src="/lib/twikoo/twikoo.all.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/algoliasearch/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/typeit/typeit.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"複製到剪貼簿","maxShownLines":10},"comment":{"twikoo":{"el":"#twikoo","envId":"https://doit-docs-comment-twikoo.vercel.app/"}},"data":{"id-1":"亨利紅的隨手筆記","id-2":"亨利紅的隨手筆記"},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"search":{"algoliaAppID":"5YGRNRQK1G","algoliaIndex":"zh_cn_index","algoliaSearchKey":"0ff6874805de24b84aa1d5ebccad56cd","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+
+</html>
