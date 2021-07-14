@@ -23,23 +23,29 @@
 
 ### 2.下載目前最新版本
 目前最新版本: 2021.5.20  (檔案大小80.31MB)
+
 {{< image src="2.png" width="800" height="400" >}}
 
 ### 3.點選安裝檔 => 開始安裝步驟
 raidrive-2021-5-20.exe
+
 {{< image src="4.png" width="800" height="400" >}}
 
 同意許可和條件 => 點選安裝
+
 {{< image src="5.png" width="800" height="400" >}}
 
 Windows安全性詢問: 確認安裝
+
 {{< image src="6.png" width="800" height="400" >}}
 
 ### 4.RaiDrive語系設定
 點擊 setting
+
 {{< image src="7.png" width="800" height="400" >}}
 
 選取中文(繁體)
+
 {{< image src="8.png" width="800" height="400" >}}
 
 
@@ -51,6 +57,7 @@ Windows安全性詢問: 確認安裝
 
 選取欲掛載之網路硬碟 (以Google Drive為例)
 以初始設定即可 => 點選確認
+
 {{< image src="10.png" width="800" height="400" >}}
 
 ### 6.登入Google帳密，並將權限授予RaiDrive
