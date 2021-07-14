@@ -3,5 +3,14 @@
         <title>Documentation - Category - 亨利紅的隨手筆記</title>
         <link>https://hyak4j.github.io/en/categories/documentation/</link>
         <description>Documentation - Category - 亨利紅的隨手筆記</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><atom:link href="https://hyak4j.github.io/en/categories/documentation/" rel="self" type="application/rss+xml" /></channel>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><atom:link href="https://hyak4j.github.io/en/categories/documentation/" rel="self" type="application/rss+xml" /><item>
+    <title>Mount Your Cloud Drive-RaiDrive</title>
+    <link>https://hyak4j.github.io/en/2021_07_13_raidrive/</link>
+    <pubDate>Wed, 14 Jul 2021 22:20:32 &#43;0800</pubDate><author>
+            <name>Henry</name>
+            <uri>https://hyak4j.github.io/en/authors/henry</uri></author><guid>https://hyak4j.github.io/en/2021_07_13_raidrive/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/0.png" referrerpolicy="no-referrer">
+            </div>Integrate the cloud drive with your own computer]]></description>
+</item></channel>
 </rss>

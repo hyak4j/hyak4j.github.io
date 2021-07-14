@@ -1,11 +1,9 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>亨利紅的隨手筆記</title>
-        <link>https://hyak4j.github.io/en/</link>
-        <description>About DoIt Theme</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 14 Jul 2021 22:20:32 &#43;0800</lastBuildDate>
-            <atom:link href="https://hyak4j.github.io/en/index.xml" rel="self" type="application/rss+xml" />
-        <item>
+        <title>software-sharing - Series - 亨利紅的隨手筆記</title>
+        <link>https://hyak4j.github.io/en/series/software-sharing/</link>
+        <description>software-sharing - Series - 亨利紅的隨手筆記</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 14 Jul 2021 22:20:32 &#43;0800</lastBuildDate><atom:link href="https://hyak4j.github.io/en/series/software-sharing/" rel="self" type="application/rss+xml" /><item>
     <title>Mount Your Cloud Drive-RaiDrive</title>
     <link>https://hyak4j.github.io/en/2021_07_13_raidrive/</link>
     <pubDate>Wed, 14 Jul 2021 22:20:32 &#43;0800</pubDate><author>
