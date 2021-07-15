@@ -1,6 +1,7 @@
 # 掛載你的雲端硬碟-RaiDrive
 
 
+<!--adsense-->
 <!--more-->
 
 ## 測試環境
@@ -65,3 +66,6 @@ Windows安全性詢問: 確認安裝
 
 ### 7.完成! 本機路徑多了所設定掛載的網路硬碟
 {{< image src="12.png" width="800" height="400" >}}
+
+
+<!--adsense-->
