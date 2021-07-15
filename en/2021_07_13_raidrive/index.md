@@ -1,6 +1,6 @@
 # Mount Your Cloud Drive-RaiDrive
 
-
+<!--adsense-->
 <!--more-->
 
 ## OS
@@ -66,3 +66,5 @@ Just use the initial settings => Click the confirm button
 
 ### 7.Done! The local path is more than the network hard disk that is set to mount
 {{< image src="12.png" width="800" height="400" >}}
+
+<!--adsense-->
