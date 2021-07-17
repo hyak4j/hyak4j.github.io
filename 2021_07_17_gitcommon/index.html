@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Git 常用指令 - 亨利紅的隨手筆記</title>
+    
+    <script data-ad-client="ca-pub-3964671306643085" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><meta name="Description" content="Git 常用指令筆記本"><meta property="og:title" content="Git 常用指令" />
+<meta property="og:description" content="Git 常用指令筆記本" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hyak4j.github.io/2021_07_17_gitcommon/" /><meta property="og:image" content="https://hyak4j.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-07-16T22:20:32&#43;08:00" />
+<meta property="article:modified_time" content="2021-07-16T22:20:32&#43;08:00" />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://hyak4j.github.io/logo.png"/>
+
+<meta name="twitter:title" content="Git 常用指令"/>
+<meta name="twitter:description" content="Git 常用指令筆記本"/>
+<meta name="application-name" content="DoIt">
+<meta name="apple-mobile-web-app-title" content="DoIt">
+
+<meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://hyak4j.github.io/2021_07_17_gitcommon/" /><link rel="prev" href="https://hyak4j.github.io/2021_07_13_raidrive/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+    <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
+    <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><meta name="google-site-verification" content="MQ8DNu27ayX6B_4ObiEDK09vGr1fdy7kOAnbd09hJk4" /><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Git 常用指令",
+        "inLanguage": "zh-cn",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/hyak4j.github.io\/2021_07_17_gitcommon\/"
+        },"image": ["https:\/\/hyak4j.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Git","wordcount":  536 ,
+        "url": "https:\/\/hyak4j.github.io\/2021_07_17_gitcommon\/","datePublished": "2021-07-16T22:20:32+08:00","dateModified": "2021-07-16T22:20:32+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": {
+                    "@type": "ImageObject",
+                    "url": "https:\/\/hyak4j.github.io\/images\/avatar.webp",
+                    "width":  512 ,
+                    "height":  512 
+                }},"authors": [{
+                    "@type": "Person",
+                    "name": "Henry"
+                }],"description": "Git 常用指令筆記本"
+    }
+    </script></head>
+
+<body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme);}
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {
+            const metas = document.getElementsByTagName('meta');
+            for (let i = 0; i < metas.length; i++)
+                if (metas[i].getAttribute('name') === metaName)
+                    return metas[i];
+            return '';
+        }
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('auto' === 'light' || 'auto' === 'dark' || 'auto' === 'black') setTheme('auto'), saveTheme('auto'); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let themeColorMeta = getMeta('theme-color');
+        if (document.body.getAttribute('theme') != 'light') themeColorMeta.content = '#000000';
+    </script>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="亨利紅的隨手筆記"><span class="header-title-pre"><i class='far fa-edit fa-fw'></i></span><span id="id-1" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 標籤 </a><a class="menu-item" href="/categories/"> 分類 </a><a class="menu-item" href="/series/"> 系列 </a><a class="menu-item" href="https://github.com" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><a href="#" onclick="return false;" class="menu-item language" title="選擇語言">繁體中文<i class="fas fa-chevron-right fa-fw"></i>
+                        <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/2021_07_17_gitcommon/" selected>繁體中文</option></select>
+                    </a><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜尋文章標題或内容..." id="search-input-desktop">
+                        <a href="#" onclick="return false;" class="search-button search-toggle" id="search-toggle-desktop" title="搜尋">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" onclick="return false;" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="#" onclick="return false;" class="menu-item theme-select" title="切換主題">
+                    <i class="fas fa-adjust fa-fw"></i>
+                    <select class="color-theme-select" id="theme-select-desktop" title="切換主題">
+                        <option value="light">淺色</option>
+                        <option value="dark">深色</option>
+                        <option value="black">黑色</option>
+                        <option value="auto">自動</option>
+                    </select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="亨利紅的隨手筆記"><span class="header-title-pre"><i class='far fa-edit fa-fw'></i></span><span id="id-2" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜尋文章標題或内容..." id="search-input-mobile">
+                        <a href="#" onclick="return false;" class="search-button search-toggle" id="search-toggle-mobile" title="搜尋">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" onclick="return false;" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="#" onclick="return false;" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">標籤</a><a class="menu-item" href="/categories/" title="">分類</a><a class="menu-item" href="/series/" title="">系列</a><a class="menu-item" href="https://github.com" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="#" onclick="return false;" class="menu-item theme-select" title="切換主題">
+                <i class="fas fa-adjust fa-fw"></i>
+                <select class="color-theme-select" id="theme-select-mobile" title="切換主題">
+                    <option value="light">淺色</option>
+                    <option value="dark">深色</option>
+                    <option value="black">黑色</option>
+                    <option value="auto">自動</option>
+                </select>
+            </a><a href="#" onclick="return false;" class="menu-item" title="選擇語言">繁體中文<i class="fas fa-chevron-right fa-fw"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/2021_07_17_gitcommon/" selected>繁體中文</option></select>
+                </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+            <div class="container"><div class="toc" id="toc-auto">
+        <h2 class="toc-title">目錄</h2>
+        <div class="toc-content always-active" id="toc-content-auto"></div>
+    </div><script>document.body.setAttribute("pageStyle", "wide")</script><script>document.body.setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Git 常用指令</h1><div class="post-meta">
+            <div class="post-meta-line">
+                <span class="post-author"><span class='author'><i class="author fas fa-user-circle fa-fw"></i><span class='screen-reader-text'>  </span><a href='https://hyak4j.github.io/authors/henry'>Henry</a></span>
+                </span>&nbsp;<span class="post-category">收錄於 </span>&nbsp;<span class="post-category">類別 <a href="/categories/documentation/"><i class="far fa-folder fa-fw"></i>文章</a></span>&nbsp;<span class="post-category">和</span>&nbsp;<span class="post-series">系列 <a href="/series/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/"><i class="far fa-list-alt fa-fw"></i>版本控制</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-07-16">2021-07-16</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;約 536 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;預計閱讀 2 分鐘&nbsp;<span id="/2021_07_17_gitcommon/" class="leancloud_visitors" data-flag-title="Git 常用指令">
+                        <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count id=twikoo_visitors></span>&nbsp;次閱讀
+                    </span>&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        data-src="/2021_07_17_gitcommon/001.png"
+        data-srcset="/2021_07_17_gitcommon/001.png, /2021_07_17_gitcommon/001.png 1.5x, /2021_07_17_gitcommon/001.png 2x"
+        data-sizes="auto"
+        alt="/2021_07_17_gitcommon/001.png"
+        title="Git 常用指令筆記本" height="390" width="719"
+    /></div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>目錄</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#設定">設定</a>
+      <ul>
+        <li><a href="#git-全局設置">Git 全局設置</a></li>
+        <li><a href="#新建代碼庫">新建代碼庫</a></li>
+      </ul>
+    </li>
+    <li><a href="#拉回-pull">拉回 (PULL)</a>
+      <ul>
+        <li><a href="#複製既有遠端代碼庫">複製既有遠端代碼庫</a></li>
+      </ul>
+    </li>
+    <li><a href="#提交-push">提交 (PUSH)</a>
+      <ul>
+        <li><a href="#將本地已有項目提交">將本地已有項目提交</a></li>
+      </ul>
+    </li>
+    <li><a href="#確認查看">確認、查看</a>
+      <ul>
+        <li><a href="#確認add狀態">確認add狀態</a></li>
+        <li><a href="#確認提交紀錄">確認提交紀錄</a></li>
+        <li><a href="#查看修改檔案差異">查看修改檔案差異</a></li>
+      </ul>
+    </li>
+    <li><a href="#分支-branch">分支 (Branch)</a>
+      <ul>
+        <li><a href="#建立分支">建立分支</a></li>
+        <li><a href="#查看分支清單">查看分支清單</a></li>
+        <li><a href="#切換分支">切換分支</a></li>
+        <li><a href="#刪除分支">刪除分支</a></li>
+        <li><a href="#修改分支名稱">修改分支名稱</a></li>
+        <li><a href="#合併分支">合併分支</a></li>
+      </ul>
+    </li>
+    <li><a href="#回復版本">回復版本</a></li>
+    <li><a href="#推薦git學習網站">推薦Git學習網站</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="設定">設定</h2>
+<h3 id="git-全局設置">Git 全局設置</h3>
+<p>設置使用者，Email</p>
+<!-- <div class="details admonition example open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-list-ol fa-fw"></i>範例<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">&ndash;&gt;</p>
+<!--</div>
+        </div>
+    </div> -->
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git config --global user.name &#34;your gitlab username&#34;
+git config –global user.email &#34;your email&#34;
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="新建代碼庫">新建代碼庫</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git init
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="拉回-pull">拉回 (PULL)</h2>
+<h3 id="複製既有遠端代碼庫">複製既有遠端代碼庫</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git clone &lt;url&gt;
+</code></pre></td></tr></table>
+</div>
+</div><div class="details admonition example open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-list-ol fa-fw"></i>範例<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">$ git clone https://192.168.1.100/xxx_group/abc.git</div>
+        </div>
+    </div>
+<h2 id="提交-push">提交 (PUSH)</h2>
+<h3 id="將本地已有項目提交">將本地已有項目提交</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git add .
+git commit -m &#34;My first commit&#34;
+git remote add origin &lt;url&gt;       **(首次新建)**
+git push origin master            **(後續使用此提交即可)**
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="確認查看">確認、查看</h2>
+<h3 id="確認add狀態">確認add狀態</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git status
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="確認提交紀錄">確認提交紀錄</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git log
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="查看修改檔案差異">查看修改檔案差異</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git diff
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="分支-branch">分支 (Branch)</h2>
+<h3 id="建立分支">建立分支</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git branch 分支名稱
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="查看分支清單">查看分支清單</h3>
+<ul>
+<li>加上 <strong>-r</strong>  =&gt;  顯示遠端分支</li>
+<li>加上 <strong>-a</strong>  =&gt;  顯示遠端與本地端分支</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git branch
+git branch -r
+git branch -a
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="切換分支">切換分支</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git checkout 分支名稱
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="刪除分支">刪除分支</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git branch -d 分支名稱
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="修改分支名稱">修改分支名稱</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git branch -m 舊分支名稱 新分支名稱
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="合併分支">合併分支</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git merge 分支名稱       **(將分支名稱與&#34;當前&#34;分支合併)**
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="回復版本">回復版本</h2>
+<p><strong>git checkout</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git checkout f9977272       **(將版本&#34;移動&#34;至此commitID)**
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>git reset</strong></p>
+<ul>
+<li>加上 -soft  =&gt;  工作目錄跟暫存區的檔案不會被丟掉</li>
+<li>加上 -hard  =&gt;  工作目錄及暫存區的檔案都會丟掉</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git reset f9977272       **(將版本回復至此commitID)**
+git reset -soft f9977272
+git reset -hard f9977272
+</code></pre></td></tr></table>
+</div>
+</div><div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw"></i>技巧<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p><strong>如何把丟掉檔案找回?</strong></p>
+<p>Ans:下git reflog指令查找id，再reset</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git reflog
+git reset commitID
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>
+<p><strong>查找功能使用checkout</strong></p>
+</li>
+<li>
+<p><strong>返回並且清除紀錄使用reset</strong></p>
+</li>
+</ul>
+</div>
+        </div>
+    </div>
+<h2 id="推薦git學習網站">推薦Git學習網站</h2>
+<ol>
+<li><a href="https://backlog.com/git-tutorial/tw/" target="_blank" rel="noopener noreffer">連猴子都能懂的Git入門指南</a>     &lt;深入淺出，圖文並茂&gt;</li>
+</ol></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新日 2021-07-16</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/2021_07_17_gitcommon/index.md" target="_blank" rel="noopener noreferrer">閱讀原始文件</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="#" onclick="return false;" title="分享到 Twitter" data-sharer="twitter" data-url="https://hyak4j.github.io/2021_07_17_gitcommon/" data-title="Git 常用指令" data-hashtags="Git"><i class="fab fa-twitter fa-fw"></i></a><a href="#" onclick="return false;" title="分享到 Facebook" data-sharer="facebook" data-url="https://hyak4j.github.io/2021_07_17_gitcommon/" data-hashtag="Git"><i class="fab fa-facebook-square fa-fw"></i></a><a href="#" onclick="return false;" title="分享到 Line" data-sharer="line" data-url="https://hyak4j.github.io/2021_07_17_gitcommon/" data-title="Git 常用指令"><i data-svg-src="/lib/simple-icons/icons/line.min.svg"></i></a><a href="#" onclick="return false;" title="分享到 微博" data-sharer="weibo" data-url="https://hyak4j.github.io/2021_07_17_gitcommon/" data-title="Git 常用指令" data-image="001.png" data-ralateuid="xxxx"><i class="fab fa-weibo fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/git/">Git</a></section>
+        <section>
+            <span><a href="#" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主頁</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/2021_07_13_raidrive/" class="prev" rel="prev" title="掛載你的雲端硬碟-RaiDrive"><i class="fas fa-angle-left fa-fw"></i>掛載你的雲端硬碟-RaiDrive</a></div>
+</div>
+<div id="comments"><div id="twikoo"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://twikoo.js.org/">Twikoo</a>.
+            </noscript></div></article></div>
+        </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"> <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.84.1">Hugo</a> | 主題 - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreffer" title="DoIt 0.2.10"><i class="far fa-edit fa-fw"></i> DoIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://github.com/" target="_blank" rel="noopener noreferrer">亨利紅</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CR BY-CY 1.0</a></span></div>
+        </div><script>
+                    if('serviceWorker' in navigator) {
+                        navigator.serviceWorker
+                            .register('/sw.min.js', { scope: '/' })
+                            .then(function(registration) {
+                                
+                            });
+                
+                        navigator.serviceWorker
+                            .ready
+                            .then(function(registration) {
+                                
+                            });
+                    }
+                </script></footer></div>
+
+    <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到頂部">
+            <i class="fas fa-arrow-up fa-fw"></i>
+        </a><a href="#" id="view-comments" class="fixed-button" title="查看評論">
+            <i class="fas fa-comment fa-fw"></i>
+        </a>
+    </div><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><script type="text/javascript" src="/lib/twikoo/twikoo.all.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/algoliasearch/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/typeit/typeit.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"複製到剪貼簿","maxShownLines":10},"comment":{"twikoo":{"el":"#twikoo","envId":"https://doit-docs-comment-twikoo.vercel.app/"}},"data":{"id-1":"亨利紅的隨手筆記","id-2":"亨利紅的隨手筆記"},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"search":{"algoliaAppID":"5YGRNRQK1G","algoliaIndex":"zh_cn_index","algoliaSearchKey":"0ff6874805de24b84aa1d5ebccad56cd","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+
+</html>
