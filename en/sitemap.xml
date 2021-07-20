@@ -1,8 +1,9 @@
+&lt;?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://hyak4j.github.io/en/2021_07_13_raidrive/</loc><lastmod>2021-07-13T22:20:32&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority><xhtml:link
+            <loc>https://hyak4j.github.io/en/2021_07_13_raidrive/</loc><lastmod>2021-07-13T22:20:32&#43;08:00</lastmod><changefreq>daily</changefreq><priority>0.9</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://hyak4j.github.io/2021_07_13_raidrive/"
@@ -11,8 +12,8 @@
                     hreflang="en"
                     href="https://hyak4j.github.io/en/2021_07_13_raidrive/"
                     /></url><url>
-            <loc>https://hyak4j.github.io/en/tags/application-software-sharing/</loc><lastmod>2021-07-13T22:20:32&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
-            <loc>https://hyak4j.github.io/en/categories/</loc><lastmod>2021-07-13T22:20:32&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority><xhtml:link
+            <loc>https://hyak4j.github.io/en/tags/application-software-sharing/</loc><lastmod>2021-07-13T22:20:32&#43;08:00</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url><url>
+            <loc>https://hyak4j.github.io/en/categories/</loc><lastmod>2021-07-13T22:20:32&#43;08:00</lastmod><changefreq>daily</changefreq><priority>0.9</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://hyak4j.github.io/categories/"
@@ -21,7 +22,7 @@
                     hreflang="en"
                     href="https://hyak4j.github.io/en/categories/"
                     /></url><url>
-            <loc>https://hyak4j.github.io/en/authors/henry/</loc><lastmod>2021-07-13T22:20:32&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority><xhtml:link
+            <loc>https://hyak4j.github.io/en/authors/henry/</loc><lastmod>2021-07-13T22:20:32&#43;08:00</lastmod><changefreq>daily</changefreq><priority>0.9</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://hyak4j.github.io/authors/henry/"
@@ -30,7 +31,7 @@
                     hreflang="en"
                     href="https://hyak4j.github.io/en/authors/henry/"
                     /></url><url>
-            <loc>https://hyak4j.github.io/en/posts/</loc><lastmod>2021-07-13T22:20:32&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority><xhtml:link
+            <loc>https://hyak4j.github.io/en/posts/</loc><lastmod>2021-07-13T22:20:32&#43;08:00</lastmod><changefreq>daily</changefreq><priority>0.9</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://hyak4j.github.io/posts/"
@@ -39,8 +40,8 @@
                     hreflang="en"
                     href="https://hyak4j.github.io/en/posts/"
                     /></url><url>
-            <loc>https://hyak4j.github.io/en/series/software-sharing/</loc><lastmod>2021-07-13T22:20:32&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
-            <loc>https://hyak4j.github.io/en/tags/</loc><lastmod>2021-07-13T22:20:32&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority><xhtml:link
+            <loc>https://hyak4j.github.io/en/series/software-sharing/</loc><lastmod>2021-07-13T22:20:32&#43;08:00</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url><url>
+            <loc>https://hyak4j.github.io/en/tags/</loc><lastmod>2021-07-13T22:20:32&#43;08:00</lastmod><changefreq>daily</changefreq><priority>0.9</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://hyak4j.github.io/tags/"
@@ -49,7 +50,7 @@
                     hreflang="en"
                     href="https://hyak4j.github.io/en/tags/"
                     /></url><url>
-            <loc>https://hyak4j.github.io/en/</loc><lastmod>2021-07-13T22:20:32&#43;08:00</lastmod><changefreq>daily</changefreq><priority>1</priority><xhtml:link
+            <loc>https://hyak4j.github.io/en/</loc><lastmod>2021-07-13T22:20:32&#43;08:00</lastmod><changefreq>daily</changefreq><priority>0.9</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://hyak4j.github.io/"
