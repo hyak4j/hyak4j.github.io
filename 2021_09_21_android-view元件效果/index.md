@@ -1,22 +1,5 @@
----
-weight: 1
-title: "Android View元件效果整理"
-date: 2021-09-21T22:20:32+08:00
-lastmod: 2021-09-21T22:20:32+08:00
-draft: false
-authors: ["Henry"]
-description: "Android_res"
-featuredImage: ""
+# Android View元件效果整理
 
-tags: ["Android"]
-categories: ["documentation"]
-series: ["Android"]
-
-lightgallery: true
-
-toc:
-  auto: false
----
 
 <!--more-->
 
@@ -55,3 +38,4 @@ android:state_window_focused | true表示當程式正在操作時套用
     android:layout_height="wrap_content"
     android:background="@drawable/selector" />
 ```
+

@@ -2,6 +2,7 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
+            <loc>https://hyak4j.github.io/2021_09_21_android-view%E5%85%83%E4%BB%B6%E6%95%88%E6%9E%9C/</loc><lastmod>2021-09-21T22:20:32&#43;08:00</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url><url>
             <loc>https://hyak4j.github.io/tw_stock_00642u/</loc><lastmod>2021-07-24T17:45:00&#43;08:00</lastmod><changefreq>daily</changefreq><priority>0.5</priority></url><url>
             <loc>https://hyak4j.github.io/2021_07_17_gitcommon/</loc><lastmod>2021-07-17T17:32:32&#43;08:00</lastmod><changefreq>daily</changefreq><priority>0.5</priority></url><url>
             <loc>https://hyak4j.github.io/2021_07_13_raidrive/</loc><lastmod>2021-07-13T22:20:32&#43;08:00</lastmod><changefreq>daily</changefreq><priority>0.5</priority><xhtml:link
@@ -13,7 +14,9 @@
                     hreflang="zh-cn"
                     href="https://hyak4j.github.io/2021_07_13_raidrive/"
                     /></url><url>
-            <loc>https://hyak4j.github.io/categories/</loc><lastmod>2021-07-24T17:45:00&#43;08:00</lastmod><changefreq>daily</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://hyak4j.github.io/tags/android/</loc><lastmod>2021-09-21T22:20:32&#43;08:00</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url><url>
+            <loc>https://hyak4j.github.io/series/android/</loc><lastmod>2021-09-21T22:20:32&#43;08:00</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url><url>
+            <loc>https://hyak4j.github.io/categories/</loc><lastmod>2021-09-21T22:20:32&#43;08:00</lastmod><changefreq>daily</changefreq><priority>0.8</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://hyak4j.github.io/en/categories/"
@@ -22,8 +25,7 @@
                     hreflang="zh-cn"
                     href="https://hyak4j.github.io/categories/"
                     /></url><url>
-            <loc>https://hyak4j.github.io/tags/etf/</loc><lastmod>2021-07-24T17:45:00&#43;08:00</lastmod><changefreq>daily</changefreq><priority>0.5</priority></url><url>
-            <loc>https://hyak4j.github.io/authors/henry/</loc><lastmod>2021-07-24T17:45:00&#43;08:00</lastmod><changefreq>daily</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://hyak4j.github.io/authors/henry/</loc><lastmod>2021-09-21T22:20:32&#43;08:00</lastmod><changefreq>daily</changefreq><priority>0.8</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://hyak4j.github.io/en/authors/henry/"
@@ -32,7 +34,7 @@
                     hreflang="zh-cn"
                     href="https://hyak4j.github.io/authors/henry/"
                     /></url><url>
-            <loc>https://hyak4j.github.io/posts/</loc><lastmod>2021-07-24T17:45:00&#43;08:00</lastmod><changefreq>daily</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://hyak4j.github.io/posts/</loc><lastmod>2021-09-21T22:20:32&#43;08:00</lastmod><changefreq>daily</changefreq><priority>0.8</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://hyak4j.github.io/en/posts/"
@@ -41,7 +43,7 @@
                     hreflang="zh-cn"
                     href="https://hyak4j.github.io/posts/"
                     /></url><url>
-            <loc>https://hyak4j.github.io/tags/</loc><lastmod>2021-07-24T17:45:00&#43;08:00</lastmod><changefreq>daily</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://hyak4j.github.io/tags/</loc><lastmod>2021-09-21T22:20:32&#43;08:00</lastmod><changefreq>daily</changefreq><priority>0.8</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://hyak4j.github.io/en/tags/"
@@ -50,7 +52,7 @@
                     hreflang="zh-cn"
                     href="https://hyak4j.github.io/tags/"
                     /></url><url>
-            <loc>https://hyak4j.github.io/</loc><lastmod>2021-07-24T17:45:00&#43;08:00</lastmod><changefreq>daily</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://hyak4j.github.io/</loc><lastmod>2021-09-21T22:20:32&#43;08:00</lastmod><changefreq>daily</changefreq><priority>0.8</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://hyak4j.github.io/en/"
@@ -59,6 +61,7 @@
                     hreflang="zh-cn"
                     href="https://hyak4j.github.io/"
                     /></url><url>
+            <loc>https://hyak4j.github.io/tags/etf/</loc><lastmod>2021-07-24T17:45:00&#43;08:00</lastmod><changefreq>daily</changefreq><priority>0.5</priority></url><url>
             <loc>https://hyak4j.github.io/tags/%E5%8E%9F%E7%89%A9%E6%96%99/</loc><lastmod>2021-07-24T17:45:00&#43;08:00</lastmod><changefreq>daily</changefreq><priority>0.5</priority></url><url>
             <loc>https://hyak4j.github.io/series/%E7%90%86%E8%B2%A1%E7%AD%86%E8%A8%98/</loc><lastmod>2021-07-24T17:45:00&#43;08:00</lastmod><changefreq>daily</changefreq><priority>0.5</priority></url><url>
             <loc>https://hyak4j.github.io/tags/git/</loc><lastmod>2021-07-17T17:32:32&#43;08:00</lastmod><changefreq>daily</changefreq><priority>0.5</priority></url><url>
