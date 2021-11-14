@@ -42,6 +42,7 @@ Ctrl + H : 檢視類別繼承圖
 ### 3.重構程式碼
 {{< admonition example >}}
  Ctrl + Alt + L : 重新編排程式碼
+ 
 **<font color=#FF0000> Ctrl + Alt + Shift + L : 重新編排程式碼</font>**
 
  **<font color=#FF0000> Ctrl + Alt + O : 重新整理import套件</font>**
