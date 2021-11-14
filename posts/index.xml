@@ -9,7 +9,7 @@
     <pubDate>Sun, 14 Nov 2021 22:20:32 &#43;0800</pubDate><author>
             <name>Henry</name>
             <uri>https://hyak4j.github.io/authors/henry</uri></author><guid>https://hyak4j.github.io/2021_11_14_androidstudio_hotkey/</guid>
-    <description><![CDATA[###前言 熟悉快捷鍵，提升你的Android開發效率。 1.編輯輔助功能 範例 Shift + F6 : 更改變數，方法或類別名稱 Alt + Insert : 開啟Generate清單 Ctrl]]></description>
+    <description><![CDATA[前言 熟悉快捷鍵，提升你的Android開發效率。 1.編輯輔助功能 範例 Shift + F6 : 更改變數，方法或類別名稱 Alt + Insert : 開啟Generate清單 Ctrl + O :]]></description>
 </item><item>
     <title>Android View元件效果整理</title>
     <link>https://hyak4j.github.io/2021_09_21_android-view%E5%85%83%E4%BB%B6%E6%95%88%E6%9E%9C/</link>
