@@ -11,15 +11,15 @@
 ### 1.編輯輔助功能
 {{< admonition example >}}
 
-Shift + F6   :  更改變數，方法或類別名稱
+**<font color=#FF0000>Shift + F6   :  更改變數，方法或類別名稱</font>**
 
-Alt + Insert : 開啟Generate清單
+**<font color=#FF0000>Alt + Insert : 開啟Generate清單</font>**
 
 Ctrl + O : 開啟可Override清單
 
 Ctrl + I : 開啟可Implement清單
 
-Ctrl + Shift + F : 找出整個專案內特定字串
+**<font color=#FF0000>Ctrl + Shift + F : 找出整個專案內特定字串</font>**
 
 {{< /admonition >}}
 
@@ -42,11 +42,11 @@ Ctrl + H : 檢視類別繼承圖
 ### 3.重構程式碼
 {{< admonition example >}}
  Ctrl + Alt + L : 重新編排程式碼
- Ctrl + Alt + Shift + L : 重新編排程式碼
+**<font color=#FF0000> Ctrl + Alt + Shift + L : 重新編排程式碼</font>**
 
- Ctrl + Alt + O : 重新整理import套件
+ **<font color=#FF0000> Ctrl + Alt + O : 重新整理import套件</font>**
 
- Ctrl + Alt + M : 把選取的程式碼包裝成一個方法
+ **<font color=#FF0000> Ctrl + Alt + M : 把選取的程式碼包裝成一個方法</font>**
 
  Ctrl + E : 顯示最近開啟的檔案清單
 
