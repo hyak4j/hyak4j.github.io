@@ -3,9 +3,16 @@
         <title>亨利紅的隨手筆記</title>
         <link>https://hyak4j.github.io/</link>
         <description>關於 DoIt 主題</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 14 Nov 2021 22:20:32 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 26 Nov 2021 23:23:32 &#43;0800</lastBuildDate>
             <atom:link href="https://hyak4j.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Linux Crontab - 排程設定</title>
+    <link>https://hyak4j.github.io/2021_11_26_linuxcrontab/</link>
+    <pubDate>Fri, 26 Nov 2021 23:23:32 &#43;0800</pubDate><author>
+            <name>Henry</name>
+            <uri>https://hyak4j.github.io/authors/henry</uri></author><guid>https://hyak4j.github.io/2021_11_26_linuxcrontab/</guid>
+    <description><![CDATA[###前言 在Linux作業系統，一般要執行例行、重覆性的工作，會透過crontab的設定來執行。 1.crontab 常用指令 個人crontab 查看個人cron]]></description>
+</item><item>
     <title>Android Studio 開發快捷鍵整理</title>
     <link>https://hyak4j.github.io/2021_11_14_androidstudio_hotkey/</link>
     <pubDate>Sun, 14 Nov 2021 22:20:32 &#43;0800</pubDate><author>
@@ -37,13 +44,6 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/001.png" referrerpolicy="no-referrer">
             </div>Git 常用指令筆記本]]></description>
-</item><item>
-    <title>Linux Crontab - 排程設定</title>
-    <link>https://hyak4j.github.io/2021_11_26_linuxcrontab/</link>
-    <pubDate>Fri, 16 Jul 2021 22:20:32 &#43;0800</pubDate><author>
-            <name>Henry</name>
-            <uri>https://hyak4j.github.io/authors/henry</uri></author><guid>https://hyak4j.github.io/2021_11_26_linuxcrontab/</guid>
-    <description><![CDATA[###前言 在Linux作業系統，一般要執行例行、重覆性的工作，會透過crontab的設定來執行。 1.crontab 常用指令 個人crontab 查看個人cron]]></description>
 </item><item>
     <title>掛載你的雲端硬碟-RaiDrive</title>
     <link>https://hyak4j.github.io/2021_07_13_raidrive/</link>
